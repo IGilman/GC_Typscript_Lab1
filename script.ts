@@ -11,7 +11,7 @@ let mountains: Mountain[] = [
     { mtnName: "Denali", height: 20310 },
 ];
 
-//console.log(mountains)
+console.log(mountains)
 
 const findNameOfTallestMountain = (mountainArray: Mountain[]): string => {
     let tallestMtn = mountainArray[0];
@@ -48,8 +48,8 @@ const calcAverageProductPrice = (productArray: Product[]): number => {
     });
     return sum / numOfProducts;
 };
-
-console.log(calcAverageProductPrice(products));
+let porductAvg = calcAverageProductPrice(products);
+console.log(porductAvg);
 
 //#3 Inventory
 
@@ -73,4 +73,5 @@ const calcInventoryValue = (inventoryArray: InventoryItem[]): number => {
     });
     return sum;
 };
-console.log(calcInventoryValue(inventory))
+let inventoryValue = calcInventoryValue(inventory)
+console.log(inventoryValue);

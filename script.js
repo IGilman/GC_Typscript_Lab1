@@ -6,7 +6,7 @@ let mountains = [
     { mtnName: "Everest", height: 29029 },
     { mtnName: "Denali", height: 20310 },
 ];
-//console.log(mountains)
+console.log(mountains);
 const findNameOfTallestMountain = (mountainArray) => {
     let tallestMtn = mountainArray[0];
     mountainArray.forEach(mountain => {
@@ -34,7 +34,8 @@ const calcAverageProductPrice = (productArray) => {
     });
     return sum / numOfProducts;
 };
-console.log(calcAverageProductPrice(products));
+let porductAvg = calcAverageProductPrice(products);
+console.log(porductAvg);
 ;
 let inventory = [
     { product: { productName: "motor", price: 10.00 }, quantity: 10 },
@@ -49,4 +50,5 @@ const calcInventoryValue = (inventoryArray) => {
     });
     return sum;
 };
-console.log(calcInventoryValue(inventory));
+let inventoryValue = calcInventoryValue(inventory);
+console.log(inventoryValue);
